@@ -5,10 +5,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from PIL import Image
 
-# Load your trained model (adjust path)
+# Model Load
 model = load_model("model/MobileNet_Model.keras")
 
-# Label mapping
+# Label Mapping
 index_to_label = {
     0: "Black Sea Sprat",
     1: "Gilt Head Bream",
@@ -21,10 +21,10 @@ index_to_label = {
     8: "Trout"
 }
 
-# Set Streamlit page config
+# Page Config
 st.set_page_config(page_title="Fish Species Classifier", layout="centered")
 
-# Inject internal CSS for padding and max width
+# Internal CSS
 st.markdown("""
     <style>
     .stMainBlockContainer {
@@ -45,7 +45,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Initialize session state for page control
+# Page Control
 if 'page' not in st.session_state:
     st.session_state['page'] = 'home'
 if 'upload' not in st.session_state:
