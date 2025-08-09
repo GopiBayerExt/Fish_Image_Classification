@@ -66,7 +66,7 @@ This project implements deep learning techniques to classify fish species from i
 
 ## Author
 
-**Vaisakh Nirupam**
+**Vaisakh Nirupam**  
 🔗 [LinkedIn](https://www.linkedin.com/in/vaisakh-nirupam)
 
 ---
